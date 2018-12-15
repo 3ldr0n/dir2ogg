@@ -19,18 +19,18 @@ cp dir2ogg /usr/bin/dir2ogg
 chown root:root /usr/bin/dir2ogg
 chmod 755 /usr/bin/dir2ogg
 
-if [ -e "/usr/man/man1/dir2ogg.1" ]
+if [ -e "/usr/local/man/man1/dir2ogg.1" ]
 then
-   echo "/usr/man/man1/dir2ogg.1 exists! Overwrite? (y/n): "
+   echo "/usr/local/man/man1/dir2ogg.1 exists! Overwrite? (y/n): "
    read answ
    if [ $answ == "n" ]
    then
       exit 1
    fi
 fi
-cp dir2ogg.1 /usr/man/man1/dir2ogg.1
-chown root:root /usr/man/man1/dir2ogg.1
-chmod 644 /usr/man/man1/dir2ogg.1
+cp dir2ogg.1 /usr/local/man/man1/dir2ogg.1
+chown root:root /usr/local/man/man1/dir2ogg.1
+chmod 644 /usr/local/man/man1/dir2ogg.1
 
 
 echo "dir2ogg is now installed. Enjoy..."
